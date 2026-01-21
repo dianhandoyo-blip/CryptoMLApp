@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CryptoML Security</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>CryptoML Security</h1>
+
+    <form method="post">
+        <input name="text" placeholder="Enter Text" required>
+        <input name="password" placeholder="Password" required>
+
+        <div class="btn-group">
+            <button name="action" value="encrypt">Encrypt</button>
+            <button name="action" value="decrypt">Decrypt</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        {{ result }}
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
